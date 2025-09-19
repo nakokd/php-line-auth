@@ -1,0 +1,8 @@
+includes:
+    - ./vendor/larastan/larastan/extension.neon
+
+parameters:
+    paths:
+        - app
+    level: 5  # 0〜9で解析の厳しさ。数字が大きいほど厳しい
+    ignoreErrors: []
