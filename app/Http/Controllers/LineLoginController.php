@@ -18,7 +18,13 @@ class LineLoginController extends Controller
     {
         $lineUser = Socialite::driver('line')->user();
 
-        Session::put('line_user', $lineUser);
+        Session::put('line_user', [
+            'id' => $lineUser->getId(),
+            'name' => $lineUser->getName(),
+            'avatar' => $lineUser->getAvatar(),
+            'token' => $lineUser->token,
+            'expiresIn' => $lineUser->expiresIn,
+        ]);
 
         return redirect('/auth/line/result');
     }
