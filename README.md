@@ -1,3 +1,8 @@
+# Laravel12+DockerでLINEログイン
+
+PHP8.2 / Laravel12 / Docker
+deploy環境はAWS App Runnerを想定、1つのコンテナでNginx＋php-fpmを動かす
+
 ## ローカル環境
 
 ### セットアップ
@@ -10,11 +15,11 @@ docker compose up -d
 
 localhost:80 にアクセス
 
-#### LINE認証
+#### LINEログイン
 
 localhost/auth/line にアクセス
 
-## Linter/Formatter
+## Linter/Formatter の実行
 
 ### Larastan (Linter)
 
