@@ -1,6 +1,6 @@
 # Laravel12+DockerでLINEログイン
 
-PHP8.2 / Laravel12 / Docker
+PHP8.2 / Laravel12 / Docker  
 deploy環境はAWS App Runnerを想定、1つのコンテナでNginx＋php-fpmを動かす
 
 ## ローカル環境
