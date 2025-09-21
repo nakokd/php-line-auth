@@ -38,15 +38,11 @@ class LineLoginController extends Controller
 
     public function viewLineUser()
     {
-        try {
-            $lineUser = Session::get('line_user');
-            if (! $lineUser) {
-                return redirect('/auth/line');
-            }
-
-            return view('line-user', ['lineUser' => $lineUser]);
-        } catch (\Exception $e) {
-            error_log('viewエラー: '.$e->getMessage());
+        $lineUser = Session::get('line_user');
+        if (! $lineUser) {
+            return redirect('/auth/line');
         }
+
+        return view('line-user', ['lineUser' => $lineUser]);
     }
 }

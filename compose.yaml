@@ -1,3 +1,5 @@
+# @note https://github.com/dockersamples/laravel-docker-examples
+
 services:
   web:
     image: nginx:latest
